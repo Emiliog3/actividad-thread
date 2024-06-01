@@ -1,6 +1,8 @@
-package com.iudigital.concurrency.example01;
+package com.iudigital.concurrency.example;
 
-public class RunnableClass implements Runnable{
+public class RunnableClass implements Runnable {
+    
+    // Método run que se ejecutará en un hilo
     @Override
     public void run() {
 

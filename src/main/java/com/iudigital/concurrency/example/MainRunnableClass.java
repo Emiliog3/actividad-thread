@@ -1,8 +1,8 @@
-package com.iudigital.concurrency.example01;
+package com.iudigital.concurrency.example;
 
 // Clase principal que contiene el método main
 
-public class PrincipalRunnable {
+public class MainRunnableClass {
 
     public static void main(String[] args) {
 

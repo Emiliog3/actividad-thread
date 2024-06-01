@@ -7,17 +7,28 @@ import java.util.List;
 
 public class ClienteProducto {
 
+    // Atributos de la clase
+
     private final String nombre;
     private final List<Producto> productos;
 
+
+    // Constructor vacío
+
+    public ClienteProducto() {
+        this.nombre = "";
+        this.productos = null;
+    }
+
     // Constructor con todos los campos
+
     public ClienteProducto(String nombre, List<Producto> productos) {
         this.nombre = nombre;
         this.productos = productos;
     }
 
-    // Se agregan solamente los getters porque no se requiere modificar los
-    // atributos
+    // Se agregan solamente los getters porque no se requiere modificar los atributos
+    
     public String getNombre() {
         return this.nombre;
     }

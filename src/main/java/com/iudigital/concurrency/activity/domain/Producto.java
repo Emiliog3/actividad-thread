@@ -1,10 +1,21 @@
-package com.iudigital.concurrency.activityvers01.domain;
+package com.iudigital.concurrency.activity.domain;
 
 public class Producto {
+
+    // Atributos
 
     private String nombre;
     private float precio;
     private int cantidad;
+
+
+    // Constructor vacío
+
+    public Producto() {
+        this.nombre = "";
+        this.precio = 0;
+        this.cantidad = 0;
+    }
 
     // Constructor con todos los campos
 
