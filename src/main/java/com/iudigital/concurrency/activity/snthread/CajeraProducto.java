@@ -25,6 +25,9 @@ public class CajeraProducto {
                     + ", Cantidad: " + producto.getCantidad()
                     + ", Costo total: $" + producto.getPrecio() * producto.getCantidad()
                     + ", Tiempo de procesamiento: " + (System.currentTimeMillis() - timeStamp) / 1000 + "seg");
+
+            System.out.println("======================================================================================================================================");
+
             contadorProductos++;
         }
 
