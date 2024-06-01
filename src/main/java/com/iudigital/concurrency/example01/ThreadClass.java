@@ -1,4 +1,4 @@
-package com.iudigital.concurrency.example;
+package com.iudigital.concurrency.example01;
 
 public class ThreadClass extends Thread {
     @Override

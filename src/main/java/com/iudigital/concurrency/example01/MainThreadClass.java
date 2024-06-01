@@ -1,4 +1,4 @@
-package com.iudigital.concurrency.example;
+package com.iudigital.concurrency.example01;
 
 public class MainThreadClass {
     public static void main(String[] args) {

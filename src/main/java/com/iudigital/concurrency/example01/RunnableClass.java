@@ -1,4 +1,4 @@
-package com.iudigital.concurrency.example;
+package com.iudigital.concurrency.example01;
 
 public class RunnableClass implements Runnable{
     @Override

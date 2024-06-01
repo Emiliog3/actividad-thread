@@ -1,4 +1,4 @@
-package com.iudigital.concurrency.activity.snthread;
+package com.iudigital.concurrency.example02.snthread;
 
 import com.iudigital.concurrency.activity.domain.ClienteProducto;
 import com.iudigital.concurrency.activity.domain.Producto;
