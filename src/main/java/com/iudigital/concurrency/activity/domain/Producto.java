@@ -1,4 +1,4 @@
-package com.iudigital.concurrency.activity.domain;
+package com.iudigital.concurrency.activityvers01.domain;
 
 public class Producto {
 

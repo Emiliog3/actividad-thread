@@ -1,6 +1,5 @@
-package com.iudigital.concurrency.activity.snthread;
+package com.iudigital.concurrency.activity;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
 
