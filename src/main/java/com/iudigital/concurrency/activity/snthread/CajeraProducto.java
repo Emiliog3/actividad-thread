@@ -15,6 +15,8 @@ public class CajeraProducto {
         this.nombreCajera = nombreCajera;
     }
 
+    // Methods
+
     public void procesarCompra(ClienteProducto cliente, long timeStamp) {
         System.out.println("La cajera " + this.nombreCajera + " COMIENZA A PROCESAR LA COMPRA DEL CLIENTE "
                 + cliente.getNombre() + " EN EL TIEMPO: " + (System.currentTimeMillis() - timeStamp) / 1000 + "seg");
@@ -30,7 +32,7 @@ public class CajeraProducto {
                     + " -> Costo total del producto: " + producto.getPrecio() * producto.getCantidad()
                     + " -> Tiempo de procesamiento: " + (System.currentTimeMillis() - timeStamp) / 1000 + "seg");
 
-                    System.out.println("=======================================");
+                    System.out.println("======================================================================================================================================");
 
         }
 
