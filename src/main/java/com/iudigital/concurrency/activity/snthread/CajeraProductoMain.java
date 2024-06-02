@@ -16,16 +16,16 @@ public class CajeraProductoMain {
         setProductos(productos);
 
         // Crear clientes con productos y nombres
-        ClienteProducto cliente1 = new ClienteProducto("Juan", productos);
-        ClienteProducto cliente2 = new ClienteProducto("María", productos);
-        ClienteProducto cliente3 = new ClienteProducto("Carlos", productos);
+        ClienteProducto cliente1 = new ClienteProducto("Juan Pérez", productos);
+        ClienteProducto cliente2 = new ClienteProducto("María García", productos);
+        ClienteProducto cliente3 = new ClienteProducto("Carlos Alzate", productos);
 
         long initialTime = System.currentTimeMillis(); // Tiempo inicial
 
         // Crear cajeras con nombres
-        CajeraProducto cajera1 = new CajeraProducto("Cajera Ana");
-        CajeraProducto cajera2 = new CajeraProducto("Cajera Luisa");
-        CajeraProducto cajera3 = new CajeraProducto("Cajera Pedro");
+        CajeraProducto cajera1 = new CajeraProducto("Cajera 1 Ana");
+        CajeraProducto cajera2 = new CajeraProducto("Cajera 2 Luisa");
+        CajeraProducto cajera3 = new CajeraProducto("Cajera 3 Leticia");
 
         // Procesar compras
         cajera1.procesarCompra(cliente1, initialTime);

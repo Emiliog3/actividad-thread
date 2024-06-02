@@ -1,6 +1,7 @@
 package com.iudigital.concurrency.activity.withrunnable;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 import com.iudigital.concurrency.activity.domain.ClienteProducto;
@@ -17,6 +18,12 @@ public class CajeraRunnableProductoMain {
         // Crear productos y agregarlos a una lista
 
         List<Producto> productos = new ArrayList<>();
+
+        // Ordenar productos por nombre antes de procesarlos
+
+        productos.sort(Comparator.comparing(Producto::getNombre));
+
+
         productos.add(new Producto("Leche", 150, 2));
         productos.add(new Producto("Pan", 50, 3));
         productos.add(new Producto("Huevos", 30, 12));

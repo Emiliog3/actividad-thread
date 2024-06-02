@@ -28,20 +28,30 @@ public class CajeraRunnableProducto implements Runnable {
 
         for (Producto producto : cliente.getProductos()) {
             esperarXsegundos();
+            
+            // Salto de línea
+
+            System.out.println();
             System.out.println("Procesando el producto " + contadorProductos
                     + " -> Nombre: " + producto.getNombre()
                     + ", Precio: $" + producto.getPrecio()
                     + ", Cantidad: " + producto.getCantidad()
                     + ", Costo total: $" + producto.getPrecio() * producto.getCantidad()
+                    + ", Cliente: " + cliente.getNombre()
                     + ", Tiempo de procesamiento: " + (System.currentTimeMillis() - timeStamp) / 1000 + "seg");
 
-            System.out.println("======================================================================================================================================");
+            System.out.println(
+                    "======================================================================================================================================");
 
             contadorProductos++;
         }
 
         System.out.println("La cajera " + this.nombreCajera + " HA TERMINADO DE PROCESAR A " + cliente.getNombre()
                 + " EN EL TIEMPO: " + (System.currentTimeMillis() - timeStamp) / 1000 + "seg");
+
+        // Salto de línea
+                
+        System.out.println();
     }
 
     private void esperarXsegundos() {

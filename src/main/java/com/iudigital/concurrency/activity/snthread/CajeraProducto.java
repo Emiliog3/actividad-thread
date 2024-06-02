@@ -12,6 +12,10 @@ public class CajeraProducto {
     }
 
     public void procesarCompra(ClienteProducto cliente, long timeStamp) {
+
+        // Salto de línea
+        System.out.println();
+
         System.out.println("La cajera " + this.nombreCajera + " COMIENZA A PROCESAR LA COMPRA DEL CLIENTE "
                 + cliente.getNombre() + " EN EL TIEMPO: " + (System.currentTimeMillis() - timeStamp) / 1000 + "seg");
 
@@ -24,6 +28,7 @@ public class CajeraProducto {
                     + ", Precio: $" + producto.getPrecio()
                     + ", Cantidad: " + producto.getCantidad()
                     + ", Costo total: $" + producto.getPrecio() * producto.getCantidad()
+                    + ", Cliente: " + cliente.getNombre()
                     + ", Tiempo de procesamiento: " + (System.currentTimeMillis() - timeStamp) / 1000 + "seg");
 
             System.out.println("======================================================================================================================================");
@@ -33,6 +38,10 @@ public class CajeraProducto {
 
         System.out.println("La cajera " + this.nombreCajera + " HA TERMINADO DE PROCESAR A " + cliente.getNombre()
                 + " EN EL TIEMPO: " + (System.currentTimeMillis() - timeStamp) / 1000 + "seg");
+
+        // Salto de línea
+
+        System.out.println();
     }
 
     private void esperarXsegundos() {
